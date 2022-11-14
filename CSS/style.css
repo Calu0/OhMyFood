@@ -1,6 +1,6 @@
 /*Bouton*/
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: auto;
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
     gap: 10px;
   }
   #logo {
-    max-width: 165px;
+    max-width: 175px;
     width: 100%;
     margin: auto;
     padding-top: 25px;
@@ -31,7 +31,7 @@ body {
     color: #353535;
   }
   .location p {
-    margin-right: 20px;
+    margin-right: 25px;
   }
   .location a {
     text-decoration: none;
@@ -50,11 +50,16 @@ body {
     text-align: center;
   }
   nav h1 {
-    font-size: 22px;
+    font-size: 24px;
+    max-width: 400px;
+    width: 80%;
+    margin-bottom: 12px;
   }
   nav p {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
     margin: 0px 0px 30px 0px;
+    color: #666666;
   }
   nav button {
     border: 1px solid transparent;
@@ -65,7 +70,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.23) 0px 4px 8px;
   }
   nav button:hover {
     background: linear-gradient(to bottom right, #ef89e0, #ae70e0);
@@ -107,7 +112,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     gap: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 2px 9px;
   }
   .fonct-card:hover {
     background-color: #f5edff;
@@ -122,8 +127,8 @@ body {
     background-color: #9356dc;
     border-radius: 50%;
     text-align: center;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -174,7 +179,7 @@ body {
   .rest-text h4 {
     font-size: 18px;
     font-weight: 700;
-    margin: 10px 0px 6px 0px;
+    margin: 10px 0px 4px 0px;
   }
   .rest-text .fa-regular {
     align-self: flex-end;
@@ -183,7 +188,7 @@ body {
   }
   .rest-text p {
     flex-basis: 100%;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 15px 0px;
   }
   /*FIN Restaurants*/
   /*Footer*/
@@ -200,7 +205,7 @@ body {
     text-decoration: none;
   }
   #logofooter {
-    max-width: 120px;
+    max-width: 105px;
     filter: invert(100%);
   }
   .info {
