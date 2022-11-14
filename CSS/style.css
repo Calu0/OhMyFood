@@ -1,5 +1,4 @@
 /*Bouton*/
-/*Bouton*/
 body {
   font-family: "Raleway", sans-serif;
   margin: auto;
@@ -51,7 +50,7 @@ body {
     text-align: center;
   }
   nav h1 {
-    font-size: 20px;
+    font-size: 22px;
   }
   nav p {
     font-size: 16px;
@@ -68,6 +67,154 @@ body {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   }
+  nav button:hover {
+    background: linear-gradient(to bottom right, #ef89e0, #ae70e0);
+  }
   /*Fonctionnement*/
+  .fonctionnement {
+    background-color: #fff;
+    padding-bottom: 38px;
+  }
+  .fonctionnement h2 {
+    margin: 38px 0px 0px 20px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .fonctionnement .fa-solid {
+    color: #7e7e7e;
+    font-size: 18px;
+  }
+  .fonctionnement p {
+    margin-right: 10px;
+  }
+  .fonctflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+  }
+  .fonct-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid transparent;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    height: 65px;
+    width: 88%;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .fonct-card:hover {
+    background-color: #f5edff;
+    cursor: pointer;
+  }
+  .fonct-card:hover .fa-solid {
+    color: #9356dc;
+  }
+  .fonct-card span {
+    margin-left: -12px;
+    border: 1px solid transparent;
+    background-color: #9356dc;
+    border-radius: 50%;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
   /*FIN Fonctionnement*/
+  /*Restaurants*/
+  .restaurants {
+    background-color: #f7f7f7;
+    padding-bottom: 55px;
+  }
+  .restaurants h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 48px 0px 0px 20px;
+    margin-bottom: 12px;
+  }
+  .restflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .restflex a {
+    text-decoration: none;
+    color: black;
+  }
+  .rest-card {
+    background-color: #fff;
+    width: 88%;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .rest-card img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .rest-text {
+    margin: 0px 22px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rest-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0px 6px 0px;
+  }
+  .rest-text .fa-regular {
+    align-self: flex-end;
+    font-size: 24px;
+    margin-bottom: -7px;
+  }
+  .rest-text p {
+    flex-basis: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+  /*FIN Restaurants*/
+  /*Footer*/
+  footer {
+    background-color: #353535;
+    color: #ffffff;
+    padding: 30px 25px 5px 25px;
+  }
+  footer img {
+    padding: 0px 0px 0px 0px;
+  }
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #logofooter {
+    max-width: 120px;
+    filter: invert(100%);
+  }
+  .info {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .info li {
+    padding: 0px 0px 10px 0px;
+  }
+  .info li .fa-solid {
+    margin-right: 12px;
+  }
+  .info li .fa-handshake-angle {
+    font-size: 11px;
+  }
+  /*FIN Footer*/
 }/*# sourceMappingURL=style.css.map */
