@@ -64,7 +64,7 @@ body {
     color: #666666;
   }
   nav button {
-    border: 1px solid transparent;
+    border: none;
     border-radius: 50px;
     background: linear-gradient(to bottom right, #ef89e0, #9356DC);
     padding: 15px;
@@ -139,38 +139,61 @@ body {
   }
   /*FIN Fonctionnement*/
   /*Restaurants*/
-  .restaurants {
+  .menu {
     background-color: #f7f7f7;
     padding-bottom: 55px;
-  }
-  .restaurants h3 {
-    font-size: 22px;
-    font-weight: 700;
-    padding: 48px 0px 0px 20px;
-    margin-bottom: 12px;
-  }
-  .restflex {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
   }
-  .restflex a {
+  .menu a {
     text-decoration: none;
     color: black;
   }
-  .rest-card {
+  .menu h3 {
+    flex-basis: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 25px 0px 0px 20px;
+    margin-bottom: 0px;
+    align-self: flex-start;
+  }
+  .menu-card {
     background-color: #fff;
     width: 88%;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  .rest-card img {
+  .menu-card img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 150px;
     object-fit: cover;
+    object-position: center;
+  }
+  .menu-card__text {
+    margin: 0px 22px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-card__text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px 4px 0px;
+  }
+  .menu-card__text .fa-regular {
+    align-self: flex-end;
+    font-size: 24px;
+    margin-bottom: -7px;
+  }
+  .menu-card__text p {
+    font-size: 14px;
+    flex-basis: 100%;
+    margin: 0px 0px 15px 0px;
   }
   .nouveauflex {
     display: flex;
@@ -181,32 +204,11 @@ body {
     position: absolute;
     color: #008766;
     border: 1px solid transparent;
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     padding: 4px 10px;
     border-radius: 3px;
     margin: 15px;
     font-size: 14px;
-  }
-  .rest-text {
-    margin: 0px 22px 0px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .rest-text h4 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 10px 0px 4px 0px;
-  }
-  .rest-text .fa-regular {
-    align-self: flex-end;
-    font-size: 24px;
-    margin-bottom: -7px;
-  }
-  .rest-text p {
-    flex-basis: 100%;
-    margin: 0px 0px 15px 0px;
   }
   /*FIN Restaurants*/
   /*Footer*/
@@ -240,4 +242,66 @@ body {
     font-size: 11px;
   }
   /*FIN Footer*/
+}
+@media screen and (min-width: 0px) and (min-width: 748px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+    padding: 0px 10px 20px 30px;
+  }
+  header .location {
+    width: auto;
+    background: none;
+  }
+  header .location p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #logo {
+    padding-top: 0px;
+  }
+  .fonctflex {
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+  }
+  .menu {
+    margin: auto;
+    max-width: 1400px;
+    width: 100%;
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 100px;
+  }
+  .menu-card {
+    width: 44%;
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 0px) and (min-width: 1024px) {
+  main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+  }
+  nav {
+    border-radius: 20px;
+  }
+  .menu {
+    border-radius: 20px 20px 20px 20px;
+    height: 700px;
+    margin-bottom: 40px;
+    padding-bottom: 125px;
+  }
+  .menu-card {
+    width: 44%;
+    max-width: 1300px;
+  }
+  .menu-card img {
+    height: 260px;
+  }
 }/*# sourceMappingURL=style.css.map */

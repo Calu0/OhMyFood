@@ -59,7 +59,7 @@ body {
       font-size: 24px;
       max-width: 400px;
       width: 80%;
-      margin-bottom:12px
+      margin-bottom: 12px;
     }
 
     p {
@@ -126,7 +126,7 @@ body {
     font-weight: 700;
     gap: 20px;
     box-shadow: rgb(0 0 0 / 17%) 0px 2px 9px;
-    margin-left:10px;
+    margin-left: 10px;
     &:hover {
       background-color: #f5edff;
       cursor: pointer;
@@ -153,18 +153,9 @@ body {
 
   /*Restaurants*/
 
-  .restaurants {
+  .menu {
     background-color: #f7f7f7;
     padding-bottom: 55px;
-    h3 {
-      font-size: 22px;
-      font-weight: 700;
-      padding: 48px 0px 0px 20px;
-      margin-bottom: 12px;
-    }
-  }
-
-  .restflex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,9 +165,17 @@ body {
       text-decoration: none;
       color: black;
     }
+    h3 {
+      flex-basis: 100%;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 25px 0px 0px 20px;
+      margin-bottom: 0px;
+      align-self: flex-start;
+    }
   }
 
-  .rest-card {
+  .menu-card {
     background-color: #fff;
     width: 88%;
     border-radius: 20px;
@@ -186,47 +185,48 @@ body {
       width: 100%;
       height: 150px;
       object-fit: cover;
+      object-position: center;
+    }
+    &__text {
+      margin: 0px 22px 0px 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px 0px 4px 0px;
+      }
+      .fa-regular {
+        align-self: flex-end;
+        font-size: 24px;
+        margin-bottom: -7px;
+      }
+      p {
+        font-size: 14px;
+        flex-basis: 100%;
+        margin: 0px 0px 15px 0px;
+      }
     }
   }
-  
+
   .nouveauflex {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     span {
       position: absolute;
-      color:#008766;
+      color: #008766;
       border: 1px solid transparent;
-      background-color: #99E2D0;
-      padding:4px 10px;
+      background-color: #99e2d0;
+      padding: 4px 10px;
       border-radius: 3px;
-      margin:15px;
+      margin: 15px;
       font-size: 14px;
     }
   }
 
-  .rest-text {
-    margin: 0px 22px 0px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    h4 {
-      font-size: 16px;
-      font-weight: 700;
-      margin: 10px 0px 4px 0px;
-    }
-    .fa-regular {
-      align-self: flex-end;
-      font-size: 24px;
-      margin-bottom: -7px;
-    }
-    p {
-      font-size: 14px;
-      flex-basis: 100%;
-      margin: 0px 0px 15px 0px;
-    }
-  }
   /*FIN Restaurants*/
   /*Footer*/
   footer {
@@ -261,7 +261,73 @@ body {
     }
   }
   /*FIN Footer*/
-  
+  @media screen and (min-width: 748px) {
+    header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0px 20px 0px;
+      padding: 0px 10px 20px 30px;
+      .location {
+        width: auto;
+        background: none;
+        p {
+          margin-top: 0px;
+          margin-bottom: 0px;
+        }
+      }
+    }
 
+    #logo {
+      padding-top: 0px;
+    }
 
+    .fonctflex {
+      flex-direction: row;
+      padding: 0px 20px 0px 20px;
+    }
+
+    .menu {
+      margin: auto;
+      max-width: 1400px;
+      width: 100%;
+      height: 500px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 100px;
+    }
+
+    .menu-card {
+      width: 44%;
+      max-width: 800px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    main {
+      max-width: 1400px;
+      margin: auto;
+      padding: 0px 20px 0px 20px;
+    }
+
+    nav {
+      border-radius: 20px;
+    }
+
+    .menu {
+      border-radius: 20px 20px 20px 20px;
+      height: 700px;
+      margin-bottom: 40px;
+      padding-bottom: 125px;
+    }
+
+    .menu-card {
+      width: 44%;
+      max-width: 1300px;
+      img {
+        height: 260px;
+      }
+    }
+  }
 }
