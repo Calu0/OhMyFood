@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/base/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Calu0/OhMyFood.git"
+  },
+  "author": "Calu0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Calu0/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Calu0/OhMyFood#readme"
+}
