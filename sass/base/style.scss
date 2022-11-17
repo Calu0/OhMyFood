@@ -1,10 +1,6 @@
 @import "../utils/variables";
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: auto;
-  box-sizing: border-box;
-}
+@import "../layouts/footer";
+@import "../layouts/body";
 
 @media screen and (min-width: 0px) {
   /*header*/
@@ -353,5 +349,37 @@ body {
       margin: 0px 10px 0px 10px;
      
     }
+
+    footer {
+      padding-bottom: 10px;
+      padding-top: 45px;
+    }
+    .content-footer {
+      max-width: 1500px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      a {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    #logofooter {
+      max-width: 240px;
+      padding-bottom:25px;
+    }
+
+    .info {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
   }
 }

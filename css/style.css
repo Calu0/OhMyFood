@@ -1,6 +1,37 @@
 /*colors*/
 /*colors*/
 /*Bouton*/
+@media screen and (min-width: 0px) {
+  footer {
+    background-color: #353535;
+    color: #ffffff;
+    padding: 30px 25px 5px 25px;
+  }
+  footer img {
+    padding: 0px 0px 0px 0px;
+  }
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  #logofooter {
+    max-width: 105px;
+    filter: invert(100%);
+  }
+  .info {
+    list-style-type: none;
+    padding: 0px;
+  }
+  .info li {
+    padding: 0px 0px 10px 0px;
+  }
+  .info li .fa-solid {
+    margin-right: 12px;
+  }
+  .info li .fa-handshake-angle {
+    font-size: 11px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -324,5 +355,32 @@ body {
   .menu-card {
     width: 22%;
     margin: 0px 10px 0px 10px;
+  }
+  footer {
+    padding-bottom: 10px;
+    padding-top: 45px;
+  }
+  .content-footer {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .content-footer a {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #logofooter {
+    max-width: 240px;
+    padding-bottom: 25px;
+  }
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */

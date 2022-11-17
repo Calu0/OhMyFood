@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 0px) {
+footer {
+    background-color: #353535;
+    color: #ffffff;
+    padding: 30px 25px 5px 25px;
+    img {
+      padding: 0px 0px 0px 0px;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  #logofooter {
+    max-width: 105px;
+    filter: invert(100%);
+  }
+
+  .info {
+    list-style-type: none;
+    padding: 0px;
+    li {
+      padding: 0px 0px 10px 0px;
+      .fa-solid {
+        margin-right: 12px;
+      }
+      .fa-handshake-angle {
+        font-size: 11px;
+      }
+    }
+  }
+
+}
+
