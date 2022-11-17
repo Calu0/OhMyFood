@@ -2,47 +2,110 @@
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="icon" type="image/x-icon" href="" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f00d32b377.js" crossorigin="anonymous"></script>
-  <title>OhMyFood</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f00d32b377.js" crossorigin="anonymous"></script>
+
+    <title>OhMyFood</title>
 </head>
 
 <body>
 
+    <!--Header-->
+    <header>
+        <a href="../index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a href="../index.html" class="logo-parent">
+            <img src="../images/logo/ohmyfood.png" alt="logo" id="logo" />
+        </a>
+    </header>
 
+    <main>
+        <img src="../images/restaurants/LeDelice.jpg" alt="main-dish" id="dishpic" />
 
+        <!--Titre-->
+        <div class="title">
+            <h1>Le délice des sens</h1>
+            <i class="fa-regular fa-heart"></i>
+        </div>
 
-    
+        <!--Menu-->
+        <section class="menu">
+            <article class="card card__start">
+                <h2>Entrées</h2>
+                <div class="menu-text">
+                    <h3>Tartare de thon</h3>
+                    <p>Assaisonné au yuzu<span>25€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Bouchée de homard croustillant</h3>
+                    <p>Et sa farandole de petits légumes<span>35€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Velouté de cèpes</h3>
+                    <p>Aux truffes<span>20€</span></p>
+                </div>
+            </article>
 
+            <article class="card card__dish">
+                <h2>Plats</h2>
+                <div class="menu-text">
+                    <h3>Poulet rôti aux herbes de Provence</h3>
+                    <p>Et sa crème de truffe<span>40€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Langouste rôtie</h3>
+                    <p>Et ses légumes de saison<span>35€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Côte de boeuf Angus</h3>
+                    <p>Et sa purée de panais<span>44€</span></p>
+                </div>
+            </article>
+
+            <article class="card card__desserts">
+                <h2>Desserts</h2>
+                <div class="menu-text">
+                    <h3>Farandole de desserts</h3>
+                    <p>Du chef<span>18€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Crème brulée</h3>
+                    <p>Revisitée<span>22€</span></p>
+                </div>
+                <div class="menu-text">
+                    <h3>Tiramisu</h3>
+                    <p>À la noisette<span>23€</span></p>
+                </div>
+            </article>
+
+            <button>
+                Commander
+            </button>
+
+        </section>
+    </main>
     <!--Footer-->
     <footer>
-      <article class="content-footer">
-          <a href="#"></ahref><img src="../images/logo/ohmyfood.png" alt="logo" id="logofooter"
-                  class="logofooter" /></a>
-          <ul class="info">
-              <a href="#">
-                  <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-              </a>
-              <a href="#">
-                  <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-              </a>
-              <a href="#">
-                  <li>Mentions légales</li>
-              </a>
-              <a href="mailto:luca.CEO@OhMyFood.com">
-                  <li>Contact</li>
-              </a>
-          </ul>
-      </article>
-  </footer>
-  <!--FIN Footer-->
+        <article class="content-footer">
+            <a href="#"><img src="../images/logo/ohmyfood.png" alt="logo" id="logofooter" class="logofooter" /></a>
+            <ul class="info">
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:luca.CEO@OhMyFood.com">Contact</a></li>
+
+            </ul>
+        </article>
+    </footer>
 
 
 </body>
+
 </html>

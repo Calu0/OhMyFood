@@ -46,11 +46,6 @@
     flex-direction: row-reverse;
     justify-content: space-around;
   }
-  .content-footer a {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-  }
   #logofooter {
     max-width: 240px;
     padding-bottom: 27px;
@@ -58,8 +53,12 @@
   .info {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+  }
+  .info li {
+    flex: 1;
+    text-align: center;
   }
 }
 body {
