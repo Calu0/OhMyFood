@@ -230,39 +230,7 @@
   }
 
   /*FIN Restaurants*/
-  /*Footer*/
-  footer {
-    background-color: #353535;
-    color: #ffffff;
-    padding: 30px 25px 5px 25px;
-    img {
-      padding: 0px 0px 0px 0px;
-    }
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-  }
-
-  #logofooter {
-    max-width: 105px;
-    filter: invert(100%);
-  }
-
-  .info {
-    list-style-type: none;
-    padding: 0px;
-    li {
-      padding: 0px 0px 10px 0px;
-      .fa-solid {
-        margin-right: 12px;
-      }
-      .fa-handshake-angle {
-        font-size: 11px;
-      }
-    }
-  }
-  /*FIN Footer*/
+  
   @media screen and (min-width: 748px) {
     header {
       max-width: 1500px;
@@ -313,15 +281,15 @@
     main {
       max-width: 1500px;
       margin: auto;
-      padding: 0px 20px 0px 20px;
+      padding: 0px 30px 0px 30px;
     }
 
     nav {
       border-radius: 20px;
     }
 
-    .fonctionnement { 
-      padding-bottom:65px;
+    .fonctionnement {
+      padding-bottom: 65px;
       h2 {
         margin-left: 30px;
       }
@@ -339,47 +307,16 @@
       margin-bottom: 40px;
       padding-bottom: 48px;
       gap: 10px;
-      h3{
-        padding-left:40px;
+      h3 {
+        padding-left: 40px;
       }
     }
 
     .menu-card {
       width: 22%;
       margin: 0px 10px 0px 10px;
-     
     }
 
-    footer {
-      padding-bottom: 10px;
-      padding-top: 45px;
-    }
-    .content-footer {
-      max-width: 1500px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row-reverse;
-      justify-content: space-around;
-      a {
-        flex-basis: 100%;
-        display: flex;
-        justify-content: center;
-      }
-    }
-
-    #logofooter {
-      max-width: 240px;
-      padding-bottom:27px;
-    }
-
-    .info {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      
-    }
-
+    
   }
 }

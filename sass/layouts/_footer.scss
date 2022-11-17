@@ -31,6 +31,38 @@ footer {
       }
     }
   }
-
 }
 
+@media screen and (min-width: 1024px) {
+
+  footer {
+    padding-bottom: 10px;
+    padding-top: 45px;
+  }
+  
+  .content-footer {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    a {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  #logofooter {
+    max-width: 240px;
+    padding-bottom: 27px;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

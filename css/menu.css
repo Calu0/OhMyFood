@@ -1,6 +1,7 @@
 /*colors*/
 /*colors*/
 /*Bouton*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @media screen and (min-width: 0px) {
   footer {
     background-color: #353535;
@@ -32,6 +33,35 @@
     font-size: 11px;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    padding-bottom: 10px;
+    padding-top: 45px;
+  }
+  .content-footer {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .content-footer a {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #logofooter {
+    max-width: 240px;
+    padding-bottom: 27px;
+  }
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -39,21 +69,167 @@ body {
 }
 
 @media screen and (min-width: 0px) {
+  /*header*/
   header {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
   }
   header .fa-solid {
-    font-size: 20px;
+    font-size: 21px;
+    font-weight: 900;
     color: #353535;
+  }
+  .logo-parent {
+    margin: auto;
   }
   #logo {
     width: 175px;
-    margin: auto;
+    margin-right: 20px;
   }
   #logo:hover {
     transform: scale(1.05);
+  }
+  /*header*/
+  #dishpic {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  /*Title*/
+  .title {
+    font-family: "Shrikhand", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #f7f7f7;
+    position: relative;
+    margin-top: -40px;
+    border-radius: 35px 35px 0px 0px;
+  }
+  .title .fa-regular {
+    font-size: 24px;
+    padding-right: 10px;
+  }
+  /*Menu*/
+  .menu {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+  }
+  .menu h2 {
+    flex-basis: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #353535;
+    border-bottom: 3px solid #99e2d0;
+    width: 45px;
+  }
+  .menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.23) 0px 4px 8px;
+    padding: 10px 15px;
+  }
+  .menu-text h3 {
+    margin: 0px 0px 5px 0px;
+    font-size: 19px;
+  }
+  .menu-text span {
+    font-weight: 700;
+    padding-right: 10px;
+  }
+  .menu-text p {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+  .menu button {
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to bottom right, #ED73DA, #9356DC);
+    padding: 15px 50px;
+    margin: 20px 0px 50px 0px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.23) 0px 4px 8px;
+  }
+  .menu button:hover {
+    background: linear-gradient(to bottom right, #f08ae0, #a16be0);
+  }
+}
+@media screen and (min-width: 748px) {
+  .card {
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 40px 30px 5px 30px;
+    max-width: 1400px;
+    margin: auto;
+  }
+  header .fa-solid {
+    font-size: 25px;
+  }
+  main {
+    max-width: 1400px;
+    margin: auto;
+    padding: 30px;
+  }
+  #logo {
+    width: 225px;
+  }
+  #dishpic {
+    height: 255px;
+    border-radius: 25px 25px 0px 0px;
+    object-position: 44% 57%;
+  }
+  .title {
+    padding: 0px 40px 30px 40px;
+  }
+  .title .fa-regular {
+    font-size: 30px;
+  }
+  .menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 25px 25px;
+    height: 550px;
+    box-shadow: rgba(50, 50, 93, 0.05) 0px 2px 5px -1px, rgba(0, 0, 0, 0.16) 0px 1px 3px -1px;
+  }
+  .btn-order {
+    flex-basis: 100%;
+  }
+  .card {
+    max-width: 420px;
+    width: 30%;
+    gap: 30px;
   }
 }/*# sourceMappingURL=menu.css.map */

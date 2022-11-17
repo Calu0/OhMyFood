@@ -32,6 +32,35 @@
     font-size: 11px;
   }
 }
+@media screen and (min-width: 1024px) {
+  footer {
+    padding-bottom: 10px;
+    padding-top: 45px;
+  }
+  .content-footer {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .content-footer a {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #logofooter {
+    max-width: 240px;
+    padding-bottom: 27px;
+  }
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -100,7 +129,7 @@ body {
   nav button {
     border: none;
     border-radius: 50px;
-    background: linear-gradient(to bottom right, #ef89e0, #9356DC);
+    background: linear-gradient(to bottom right, #ED73DA, #9356DC);
     padding: 15px;
     color: white;
     font-size: 16px;
@@ -109,7 +138,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.23) 0px 4px 8px;
   }
   nav button:hover {
-    background: linear-gradient(to bottom right, #f29fe6, #a16be0);
+    background: linear-gradient(to bottom right, #f08ae0, #a16be0);
   }
   /*Fonctionnement*/
   .fonctionnement {
@@ -248,37 +277,6 @@ body {
     font-size: 14px;
   }
   /*FIN Restaurants*/
-  /*Footer*/
-  footer {
-    background-color: #353535;
-    color: #ffffff;
-    padding: 30px 25px 5px 25px;
-  }
-  footer img {
-    padding: 0px 0px 0px 0px;
-  }
-  footer a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  #logofooter {
-    max-width: 105px;
-    filter: invert(100%);
-  }
-  .info {
-    list-style-type: none;
-    padding: 0px;
-  }
-  .info li {
-    padding: 0px 0px 10px 0px;
-  }
-  .info li .fa-solid {
-    margin-right: 12px;
-  }
-  .info li .fa-handshake-angle {
-    font-size: 11px;
-  }
-  /*FIN Footer*/
 }
 @media screen and (min-width: 0px) and (min-width: 748px) {
   header {
@@ -326,7 +324,7 @@ body {
   main {
     max-width: 1500px;
     margin: auto;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 30px 0px 30px;
   }
   nav {
     border-radius: 20px;
@@ -355,32 +353,5 @@ body {
   .menu-card {
     width: 22%;
     margin: 0px 10px 0px 10px;
-  }
-  footer {
-    padding-bottom: 10px;
-    padding-top: 45px;
-  }
-  .content-footer {
-    max-width: 1500px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-  }
-  .content-footer a {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  #logofooter {
-    max-width: 240px;
-    padding-bottom: 27px;
-  }
-  .info {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
