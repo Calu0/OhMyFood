@@ -182,14 +182,16 @@
     align-items: baseline;
     margin-bottom: 50px;
     border-radius: 0px 0px 25px 25px;
-    height: 550px;
+    height: 540px;
     box-shadow: rgba(50, 50, 93, 5%) 0px 2px 5px -1px,
       rgba(0, 0, 0, 16%) 0px 1px 3px -1px;
+      button {
+        margin-bottom: 40px;
+      }
+
   }
 
-  .btn-order {
-    flex-basis: 100%;
-  }
+  
 
   .card {
     max-width: 420px;
