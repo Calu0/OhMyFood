@@ -1,6 +1,7 @@
 @import "../utils/variables";
 @import "../layouts/footer";
 @import "../layouts/body";
+@import "../utils/anim";
 
 @media screen and (min-width: 0px) {
   /*header*/
@@ -16,6 +17,7 @@
     width: 100%;
     margin: auto;
     padding-top: 25px;
+    transition: transform 320ms;
     &:hover {
       transform: scale(1.05);
     }
@@ -200,16 +202,24 @@
         font-weight: 700;
         margin: 10px 0px 4px 0px;
       }
-      .fa-regular {
-        align-self: flex-end;
-        font-size: 24px;
-        margin-bottom: -7px;
-      }
       p {
         font-size: 14px;
-        flex-basis: 100%;
+        flex-basis: 80%;
         margin: 0px 0px 15px 0px;
       }
+    }
+  }
+
+  .heart {
+    .fa-heart {
+      flex-basis: 10%;
+      display: flex;
+    }
+    #heart-border {     
+      margin-bottom: -24px;
+    }
+    #heart-empty {
+      position: absolute;
     }
   }
 
@@ -230,7 +240,7 @@
   }
 
   /*FIN Restaurants*/
-  
+
   @media screen and (min-width: 748px) {
     header {
       max-width: 1500px;
@@ -316,7 +326,5 @@
       width: 22%;
       margin: 0px 10px 0px 10px;
     }
-
-    
   }
 }
