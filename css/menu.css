@@ -67,6 +67,36 @@ body {
   box-sizing: border-box;
 }
 
+.heart #heart-border {
+  font-size: 24px;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
+}
+.heart #heart-empty {
+  font-size: 24px;
+  position: absolute;
+  cursor: pointer;
+  color: transparent;
+  transition: all 500ms ease-in-out;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
+  opacity: 0;
+}
+.heart:hover #heart-border {
+  color: transparent !important;
+}
+.heart:hover #heart-empty {
+  opacity: 100 !important;
+}
+.heart:active {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 0px) {
   /*header*/
   header {
@@ -85,6 +115,7 @@ body {
   #logo {
     width: 175px;
     margin-right: 20px;
+    transition: transform 320ms;
   }
   #logo:hover {
     transform: scale(1.05);
@@ -104,6 +135,7 @@ body {
     font-family: "Shrikhand", cursive;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 20px;
     background-color: #f7f7f7;
@@ -111,9 +143,20 @@ body {
     margin-top: -40px;
     border-radius: 35px 35px 0px 0px;
   }
-  .title .fa-regular {
-    font-size: 24px;
-    padding-right: 10px;
+  .title h1 {
+    flex-basis: 80%;
+  }
+  .title .heart {
+    display: flex;
+    cursor: pointer;
+  }
+  .title .heart #heart-border {
+    flex-basis: 20%;
+    font-size: 30px;
+  }
+  .title .heart #heart-empty {
+    flex-basis: 20%;
+    font-size: 30px;
   }
   /*Menu*/
   .menu {

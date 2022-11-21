@@ -66,6 +66,36 @@ body {
   box-sizing: border-box;
 }
 
+.heart #heart-border {
+  font-size: 24px;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
+}
+.heart #heart-empty {
+  font-size: 24px;
+  position: absolute;
+  cursor: pointer;
+  color: transparent;
+  transition: all 500ms ease-in-out;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
+  opacity: 0;
+}
+.heart:hover #heart-border {
+  color: transparent !important;
+}
+.heart:hover #heart-empty {
+  opacity: 100 !important;
+}
+.heart:active {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 0px) {
   /*header*/
   header {
@@ -79,6 +109,7 @@ body {
     width: 100%;
     margin: auto;
     padding-top: 25px;
+    transition: transform 320ms;
   }
   #logo:hover {
     transform: scale(1.05);
@@ -250,15 +281,20 @@ body {
     font-weight: 700;
     margin: 10px 0px 4px 0px;
   }
-  .menu-card__text .fa-regular {
-    align-self: flex-end;
-    font-size: 24px;
-    margin-bottom: -7px;
-  }
   .menu-card__text p {
     font-size: 14px;
-    flex-basis: 100%;
+    flex-basis: 80%;
     margin: 0px 0px 15px 0px;
+  }
+  .heart .fa-heart {
+    flex-basis: 10%;
+    display: flex;
+  }
+  .heart #heart-border {
+    margin-bottom: -24px;
+  }
+  .heart #heart-empty {
+    position: absolute;
   }
   .nouveauflex {
     display: flex;

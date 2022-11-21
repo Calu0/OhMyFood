@@ -2,6 +2,7 @@
 @import "../layouts/footer";
 @import "../layouts/body";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import "../utils/anim";
 
 @media screen and (min-width: 0px) {
   /*header*/
@@ -24,6 +25,7 @@
   #logo {
     width: 175px;
     margin-right: 20px;
+    transition: transform 320ms;  
     &:hover {
       transform: scale(1.05);
     }
@@ -47,17 +49,31 @@
     font-family: "Shrikhand", cursive;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 20px;
     background-color: #f7f7f7;
     position: relative;
     margin-top: -40px;
     border-radius: 35px 35px 0px 0px;
-
-    .fa-regular {
-      font-size: 24px;
-      padding-right: 10px;
+    h1 {
+      flex-basis: 80%;
     }
+
+    .heart{
+      display: flex;     
+      cursor: pointer; 
+
+      #heart-border {
+      flex-basis: 20%;
+      font-size: 30px;
+      }
+
+      #heart-empty {
+      flex-basis: 20%;
+      font-size: 30px;
+     }
+  }
   }
 
   /*Menu*/
