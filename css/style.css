@@ -72,7 +72,7 @@ body {
   box-sizing: border-box;
 }
 
-.heart #heart-border {
+.heart__border {
   font-size: 24px;
   position: relative;
   transition: all 350ms ease-in-out;
@@ -80,7 +80,7 @@ body {
   -webkit-background-clip: text;
   background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
 }
-.heart #heart-empty {
+.heart__empty {
   font-size: 24px;
   position: absolute;
   cursor: pointer;
@@ -92,10 +92,10 @@ body {
   background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
   opacity: 0;
 }
-.heart:hover #heart-border {
+.heart:hover .heart__border {
   color: transparent !important;
 }
-.heart:hover #heart-empty {
+.heart:hover .heart__empty {
   opacity: 100 !important;
 }
 .heart:active {
@@ -296,10 +296,10 @@ body {
     flex-basis: 10%;
     display: flex;
   }
-  .heart #heart-border {
+  .heart__border {
     margin-bottom: -24px;
   }
-  .heart #heart-empty {
+  .heart__empty {
     position: absolute;
   }
   .nouveauflex {

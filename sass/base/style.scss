@@ -215,10 +215,10 @@
       flex-basis: 10%;
       display: flex;
     }
-    #heart-border {     
+    &__border {     
       margin-bottom: -24px;
     }
-    #heart-empty {
+    &__empty {
       position: absolute;
     }
   }

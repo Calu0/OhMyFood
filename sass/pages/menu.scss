@@ -64,12 +64,12 @@
       display: flex;     
       cursor: pointer; 
 
-      #heart-border {
+      &__border {
       flex-basis: 30%;
       font-size: 30px;
       }
 
-      #heart-empty {
+      &__empty {
       flex-basis: 30%;
       font-size: 30px;
      }

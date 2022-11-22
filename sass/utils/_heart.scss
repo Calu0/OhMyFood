@@ -1,6 +1,6 @@
   .heart {
     
-    #heart-border {
+    &__border {
     font-size: 24px;
     position: relative;
     transition: all 350ms ease-in-out;
@@ -9,7 +9,7 @@
     background-image: linear-gradient(to bottom, #9356DC,40%, #FF79DA);
   }
 
-    #heart-empty {
+    &__empty {
     font-size: 24px;
     position: absolute;
     cursor: pointer;
@@ -22,10 +22,10 @@
     opacity: 0;
   }
   &:hover{
-    #heart-border{
+    .heart__border{
         color:transparent !important;
       }
-    #heart-empty {
+    .heart__empty {
         opacity: 100 !important;    
     }
   }
