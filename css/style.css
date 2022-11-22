@@ -59,6 +59,12 @@
     flex: 1;
     text-align: center;
   }
+  .info li a:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #9356DC, 30%, #ED73DA);
+  }
 }
 body {
   font-family: "Roboto", sans-serif;
