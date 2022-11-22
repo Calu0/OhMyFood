@@ -70,7 +70,7 @@ body {
 .heart #heart-border {
   font-size: 24px;
   position: relative;
-  transition: all 500ms ease-in-out;
+  transition: all 350ms ease-in-out;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to bottom, #9356DC, 40%, #FF79DA);
@@ -80,7 +80,7 @@ body {
   position: absolute;
   cursor: pointer;
   color: transparent;
-  transition: all 500ms ease-in-out;
+  transition: all 350ms ease-in-out;
   background-repeat: no-repeat;
   background-clip: text;
   -webkit-background-clip: text;
@@ -151,11 +151,11 @@ body {
     cursor: pointer;
   }
   .title .heart #heart-border {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-size: 30px;
   }
   .title .heart #heart-empty {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-size: 30px;
   }
   /*Menu*/
@@ -178,22 +178,62 @@ body {
     border-bottom: 3px solid #99e2d0;
     width: 45px;
   }
-  .menu-text {
+  .check-hidden {
+    cursor: pointer;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     background-color: white;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.23) 0px 4px 8px;
+    overflow: hidden;
+  }
+  .check-hidden:hover .checkspan {
+    display: block;
+    margin-right: 0px;
+  }
+  .check-hidden:hover .fa-circle-check {
+    transform: rotate(-1turn);
+  }
+  .check-hidden .checkspan {
+    transition: all 350ms ease-in-out;
+    background-size: 100% 0%;
+    margin-right: -63px;
+    background-color: #99e2d0;
+  }
+  .check-hidden .fa-circle-check {
+    align-items: center;
+    color: white;
+    border-radius: 0px 12px 12px 0px;
+    padding: 20px;
+    font-size: 23px;
+    transition: all 700ms ease-in-out;
+  }
+  .menu-text {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 11px 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .menu-text h3 {
-    margin: 0px 0px 2px 0px;
+    margin: 0px 40px 2px 0px;
     font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  .menu-text span {
+  .menu-text .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .menu-text .price {
     font-weight: 700;
-    padding-right: 10px;
+    padding: 0px 10px 0px 20px;
   }
   .menu-text p {
     margin: 0px;
@@ -246,9 +286,22 @@ body {
     width: 225px;
   }
   #dishpic {
-    height: 255px;
+    height: 280px;
     border-radius: 25px 25px 0px 0px;
     object-position: 44% 57%;
+  }
+  .menu-hover {
+    transition: all 450ms ease-in-out;
+  }
+  .menu-hover:hover {
+    margin-top: -60px;
+  }
+  .menu-hover:hover .menu {
+    padding-top: 24px;
+    padding-bottom: 15px;
+  }
+  .menu-hover:hover .menu button {
+    margin: 28px 0px 50px 0px;
   }
   .title {
     padding: 0px 40px 30px 40px;
@@ -265,6 +318,10 @@ body {
     border-radius: 0px 0px 25px 25px;
     height: 540px;
     box-shadow: rgba(50, 50, 93, 0.05) 0px 2px 5px -1px, rgba(0, 0, 0, 0.16) 0px 1px 3px -1px;
+    transition: all 450ms ease-in-out;
+  }
+  .menu button {
+    transition: all 450ms ease-in-out;
   }
   .card {
     max-width: 420px;
