@@ -1,0 +1,65 @@
+@media all and (min-width: 0px) {
+
+  .fade1 {
+    opacity: 0;
+    animation: fade1 250ms 250ms both;
+  }
+
+  .fade2 {
+    opacity: 0;
+    animation: fade2 350ms 350ms both;
+  }
+
+  .fade3 {
+    opacity: 0;
+    animation: fade3 450ms 450ms both;
+  }
+
+  .fade4 {
+    opacity: 0;
+    animation: fade3 550ms 550ms both;
+  }
+
+  .fade5 {
+    opacity: 0;
+    animation: fade3 650ms 650ms both;
+  }
+
+  .fade6 {
+    opacity: 0;
+    animation: fade3 750ms 750ms both;
+  }
+
+  .fade7 {
+    opacity: 0;
+    animation: fade3 850ms 850ms both;
+  }
+
+  .fade8 {
+    opacity: 0;
+    animation: fade3 950ms 950ms both;
+  }
+
+  .fade9 {
+    opacity: 0;
+    animation: fade3 1150ms 1150ms both;
+  }
+}
+
+@media all and (min-width: 1024px) {
+
+  .fade1, .fade4, .fade7{
+    opacity: 0;
+    animation: fade1 350ms 350ms both;
+  }
+
+  .fade2, .fade5, .fade8 {
+    opacity: 0;
+    animation: fade2 550ms 550ms both;
+  }
+
+  .fade3, .fade6, .fade9 {
+    opacity: 0;
+    animation: fade3 750ms 750ms both;
+  }
+}

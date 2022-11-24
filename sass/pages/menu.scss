@@ -3,6 +3,8 @@
 @import "../layouts/body";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "../utils/heart";
+@import "../utils/keyframes";
+@import "../components/fade";
 
 @media screen and (min-width: 0px) {
   /*header*/
@@ -100,7 +102,7 @@
     }
   }
 
-  .check-hidden {
+  .card-content {
     cursor:pointer;
     display: flex;
     align-items: center;
@@ -135,7 +137,7 @@
       transition: all 700ms ease-in-out;
     }
   }
-
+  
   .menu-text {
     flex-basis: 100%;
     display: flex;
