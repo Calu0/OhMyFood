@@ -1,12 +1,14 @@
 @import "../utils/variables";
+@import "../components/loader";
+@import "../utils/keyframes";
 @import "../layouts/footer";
 @import "../layouts/body";
 @import "../utils/heart";
-@import "../components/loader";
-@import "../utils/keyframes";
+
 
 @media screen and (min-width: 0px) {
   /*header*/
+  
   header {
     display: flex;
     flex-direction: column;

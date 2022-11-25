@@ -1,53 +1,47 @@
-
 @import "../utils/variables";
 
 .loader-parent {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+  animation: loader-background 1.5s both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border-top: 5px solid $lightpurple;
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255,0.9);
-    z-index: 5;
-    animation:loader-background 1.5s both; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .circle {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        border-top:5px solid $lightpurple;  
-        position: absolute;   
-        &__1 {
-            display: none;
-            width: 160px;
-            height: 160px;
-            animation: loader 1.8s ease-in-out both infinite;
-        }
-
-        &__2 {
-            width: 120px;
-            height: 120px;
-            animation: loader 1.2s ease-in-out both infinite;
-        }
-
-        &__3 {
-           
-            width: 100px;
-            height: 100px;
-            animation: loader 950ms ease-in-out both infinite;
-        }
-
-        &__4 {
-            display: none;
-            width: 80px;
-            height: 80px;
-            animation: loader 800ms ease-in-out both infinite;
-            border-color: $lightpurple;
-        }
-
-
+    &__1 {
+      display: none;
+      width: 160px;
+      height: 160px;
+      animation: loader 1.8s ease-in-out both infinite;
     }
-    
-}
 
+    &__2 {
+      width: 120px;
+      height: 120px;
+      animation: loader 1.2s ease-in-out both infinite;
+    }
+
+    &__3 {
+      width: 100px;
+      height: 100px;
+      animation: loader 950ms ease-in-out both infinite;
+    }
+
+    &__4 {
+      display: none;
+      width: 80px;
+      height: 80px;
+      animation: loader 800ms ease-in-out both infinite;
+      border-color: $lightpurple;
+    }
+  }
+}
