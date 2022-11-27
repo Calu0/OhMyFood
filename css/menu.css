@@ -321,7 +321,7 @@ body {
   .card-content .checkspan {
     transition: all 350ms ease-in-out;
     background-size: 100% 0%;
-    margin-right: -63px;
+    margin-right: -65px;
     background-color: #99e2d0;
   }
   .card-content .fa-circle-check {
@@ -384,6 +384,7 @@ body {
   }
   .menu button:hover {
     background: linear-gradient(to bottom right, #f08ae0, #a16be0);
+    box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.4) 0px 4px 8px;
   }
 }
 @media screen and (min-width: 748px) {
@@ -409,42 +410,44 @@ body {
     width: 225px;
   }
   #dishpic {
-    height: 280px;
+    height: 248px;
     border-radius: 25px 25px 0px 0px;
     object-position: 44% 57%;
   }
   .menu-hover {
-    transition: all 450ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
   .menu-hover:hover {
-    margin-top: -60px;
+    transform: translateY(-20px);
+    /* button{
+      margin:28px 0px 50px 0px;
+    }*/
+  }
+  .menu-hover:hover .title {
+    transform: translateY(-20px);
   }
   .menu-hover:hover .menu {
-    padding-top: 24px;
-    padding-bottom: 15px;
-  }
-  .menu-hover:hover .menu button {
-    margin: 28px 0px 50px 0px;
+    transform: translateY(-55px);
   }
   .title {
-    padding: 0px 40px 30px 40px;
+    padding: 0px 40px 35px 40px;
+    transition: all 400ms ease-in-out;
+    z-index: 1;
   }
   .title .fa-regular {
     font-size: 30px;
   }
   .menu {
+    padding-top: 55px;
+    transform: translateY(-55px);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 50px;
     border-radius: 0px 0px 25px 25px;
     height: 540px;
     box-shadow: rgba(50, 50, 93, 0.05) 0px 2px 5px -1px, rgba(0, 0, 0, 0.16) 0px 1px 3px -1px;
-    transition: all 450ms ease-in-out;
-  }
-  .menu button {
-    transition: all 450ms ease-in-out;
+    transition: all 400ms ease-in-out;
   }
   .card {
     max-width: 420px;

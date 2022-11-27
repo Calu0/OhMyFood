@@ -123,7 +123,7 @@
     .checkspan {
       transition: all 350ms ease-in-out;
       background-size: 100% 0%;
-      margin-right: -63px;
+      margin-right: -65px;
       background-color: #99e2d0;
     
     }
@@ -195,6 +195,8 @@
 
     &:hover {
       background: $hover-gradient;
+      box-shadow: rgb(0 0 0 / 0%) 0px 14px 21px, rgb(0 0 0 / 40%) 0px 4px 8px;
+
     }
   }
 }
@@ -226,48 +228,49 @@
   }
 
   #dishpic {
-    height: 280px;
+    height: 248px;
     border-radius: 25px 25px 0px 0px;
     object-position: 44% 57%;
   }
 
   .menu-hover {
-    transition: all 450ms ease-in-out;
+    transition: all 400ms ease-in-out;
     &:hover{
-      margin-top: -60px;
-      .menu{
-        padding-top: 24px;
-        padding-bottom: 15px;
-        button{
-        margin:28px 0px 50px 0px;
+      transform:translateY(-20px);
+      .title{
+        transform: translateY(-20px);
       }
+      .menu {
+        transform: translateY(-55px);
+      }
+       /* button{
+        margin:28px 0px 50px 0px;
+      }*/
       }
       
   }
-}
 
   .title {
-    padding: 0px 40px 30px 40px;
-
+    padding: 0px 40px 35px 40px;
+    transition: all 400ms ease-in-out;
+    z-index: 1;
     .fa-regular {
       font-size: 30px;
     }
   }
 
   .menu {
+    padding-top:55px;
+    transform:translateY(-55px);
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 50px;
     border-radius: 0px 0px 25px 25px;
     height: 540px;
     box-shadow: rgba(50, 50, 93, 5%) 0px 2px 5px -1px,
       rgba(0, 0, 0, 16%) 0px 1px 3px -1px;
-      transition: all 450ms ease-in-out;
-      button {
-        transition: all 450ms ease-in-out;
-      }
+      transition: all 400ms ease-in-out;
   }
 
   .card {

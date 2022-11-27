@@ -86,6 +86,7 @@
       box-shadow: rgb(0 0 0 / 0%) 0px 14px 21px, rgb(0 0 0 / 23%) 0px 4px 8px;
       &:hover {
         background: $hover-gradient;
+        box-shadow: rgb(0 0 0 / 0%) 0px 14px 21px, rgb(0 0 0 / 40%) 0px 4px 8px;
       }
     }
   }

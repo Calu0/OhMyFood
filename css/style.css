@@ -23,27 +23,14 @@
   position: absolute;
 }
 .loader-parent .circle__1 {
-  display: none;
-  width: 160px;
-  height: 160px;
-  animation: loader 1.8s ease-in-out both infinite;
-}
-.loader-parent .circle__2 {
   width: 120px;
   height: 120px;
   animation: loader 1.2s ease-in-out both infinite;
 }
-.loader-parent .circle__3 {
+.loader-parent .circle__2 {
   width: 100px;
   height: 100px;
   animation: loader 950ms ease-in-out both infinite;
-}
-.loader-parent .circle__4 {
-  display: none;
-  width: 80px;
-  height: 80px;
-  animation: loader 800ms ease-in-out both infinite;
-  border-color: #ED73DA;
 }
 
 @keyframes fade1 {
@@ -260,6 +247,7 @@ body {
   }
   nav button:hover {
     background: linear-gradient(to bottom right, #f08ae0, #a16be0);
+    box-shadow: rgba(0, 0, 0, 0) 0px 14px 21px, rgba(0, 0, 0, 0.4) 0px 4px 8px;
   }
   /*Fonctionnement*/
   .fonctionnement {
