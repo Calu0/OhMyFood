@@ -143,6 +143,7 @@ body {
     transform: rotate(1turn);
   }
 }
+@keyframes heartfill {}
 @media all and (min-width: 0px) {
   .fade1 {
     opacity: 0;
@@ -418,27 +419,23 @@ body {
     transition: all 400ms ease-in-out;
   }
   .menu-hover:hover {
-    transform: translateY(-20px);
+    transform: translateY(-35px);
     /* button{
       margin:28px 0px 50px 0px;
     }*/
   }
-  .menu-hover:hover .title {
-    transform: translateY(-20px);
-  }
   .menu-hover:hover .menu {
-    transform: translateY(-55px);
+    transform: translateY(-46px);
   }
   .title {
-    padding: 0px 40px 35px 40px;
-    transition: all 400ms ease-in-out;
+    padding: 0px 40px 40px 40px;
     z-index: 1;
   }
   .title .fa-regular {
     font-size: 30px;
   }
   .menu {
-    padding-top: 55px;
+    padding-top: 60px;
     transform: translateY(-55px);
     flex-direction: row;
     flex-wrap: wrap;

@@ -35,9 +35,6 @@
 }
 
 @keyframes loader-background {
-  0% {
-  }
-
   100% {
     visibility: hidden;
   }
@@ -47,4 +44,8 @@
   0% {
     transform: rotate(1turn);
   }
+}
+
+@keyframes heartfill {
+ 
 }

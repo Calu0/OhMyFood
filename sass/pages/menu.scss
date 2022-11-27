@@ -236,12 +236,9 @@
   .menu-hover {
     transition: all 400ms ease-in-out;
     &:hover{
-      transform:translateY(-20px);
-      .title{
-        transform: translateY(-20px);
-      }
+      transform:translateY(-35px);
       .menu {
-        transform: translateY(-55px);
+        transform: translateY(-46px);
       }
        /* button{
         margin:28px 0px 50px 0px;
@@ -251,8 +248,7 @@
   }
 
   .title {
-    padding: 0px 40px 35px 40px;
-    transition: all 400ms ease-in-out;
+    padding: 0px 40px 40px 40px;
     z-index: 1;
     .fa-regular {
       font-size: 30px;
@@ -260,7 +256,7 @@
   }
 
   .menu {
-    padding-top:55px;
+    padding-top:60px;
     transform:translateY(-55px);
     flex-direction: row;
     flex-wrap: wrap;
