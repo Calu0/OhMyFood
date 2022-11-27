@@ -1,3 +1,5 @@
+  @import "../utils/keyframes";
+  
   .heart {
     
     &__border {
@@ -6,8 +8,7 @@
     transition: all 150ms ease-in-out;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, #9356DC,40%, #FF79DA);
-    
+    background-image: linear-gradient(to bottom, #9356DC,40%, #FF79DA); 
   }
 
     &__empty {
@@ -34,9 +35,6 @@
     transform: scale(1.2);
   }
 }
-
-
-
  
     
 
